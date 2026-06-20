@@ -1,7 +1,13 @@
 import { create } from 'zustand';
 import { get, set, del } from 'idb-keyval';
 import { authAPI } from '../services/api';
+import api from '../services/api'; // Import your configured instance
 
+// In your fetchCases action:
+fetchCases: async () => {
+  const response = await api.get('/cases'); // This will automatically use the baseURL
+  setStore({ cases: response.data });
+}
 export const useAuthStore = create((setStore) => ({
   user: (() => {
     try {
