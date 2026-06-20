@@ -59,7 +59,12 @@ app.use('/api/', apiLimiter);
 // Serve static assets if in production (optional fallback)
 const __dirname = path.resolve();
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'frontend/dist')));
+  // Use path.resolve('..', 'frontend', 'dist') to look one level up from the backend folder
+  app.use(express.static(path.resolve('..', 'frontend', 'dist')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve('..', 'frontend', 'dist', 'index.html'));
+  });
 }
 
 // Map API Routes
