@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // IMPORTANT: This must be the full URL of your Render backend
-const API_BASE_URL = 'https://crimegptheck.netlify.app/api'; // Replace with your actual Render backend URL
+const API_BASE_URL = 'https://crimegpt-hackpro.onrender.com/api'; // Replace with your actual Render backend URL
 
 const api = axios.create({
   baseURL: API_BASE_URL,
