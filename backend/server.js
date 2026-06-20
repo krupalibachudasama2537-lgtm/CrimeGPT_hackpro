@@ -25,6 +25,7 @@ const __backendDir = path.dirname(__filename);
 dotenv.config({ path: path.join(__backendDir, '.env') });
 
 const app = express();
+app.set('trust proxy', 1);
 const server = http.createServer(app);
 app.use(cors({
   origin: [
