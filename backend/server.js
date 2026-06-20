@@ -27,14 +27,21 @@ dotenv.config({ path: path.join(__backendDir, '.env') });
 const app = express();
 const server = http.createServer(app);
 app.use(cors({
-  origin: 'https://crimegptheck.netlify.app/', // Replace with your actual Netlify URL
+  origin: [
+    'https://crime-gpt-hackpro-e29i.vercel.app', // Your new Vercel URL
+    'https://crimegptheck.netlify.app'          // Keep this if you still use it
+  ], 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
-// Socket.io integration
+
+// Do the same for your Socket.io integration:
 const io = new Server(server, {
   cors: {
-    origin: 'https://crimegptheck.netlify.app', 
+    origin: [
+        'https://crime-gpt-hackpro-e29i.vercel.app', 
+        'https://crimegptheck.netlify.app'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE']
   }
 });
