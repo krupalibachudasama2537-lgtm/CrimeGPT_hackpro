@@ -1,12 +1,14 @@
 import axios from 'axios';
 
-// Update this to your production Render URL
+// IMPORTANT: This must be the full URL of your Render backend
 const API_BASE_URL = 'https://crimegpt-hackpro.onrender.com/api'; 
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   withCredentials: true
 });
+
+export default api;
 
 export default api;
 // Get auth token from localStorage
