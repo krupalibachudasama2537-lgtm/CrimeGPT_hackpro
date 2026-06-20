@@ -1,32 +1,12 @@
 [
   {
-    "_id": "65e8a156e9c60e3cc4a12301",
-    "username": "IO-9982",
-    "name": "Inspector Rajesh V. Parmar",
-    "email": "rajesh.parmar@police.gov.in",
-    "badge": "IO-9982",
-    "password": "$2a$10$0XlIVThiy1cJYDAdEPQyduw.D1zsqsxUuGh0K.aPJAdtlxddqWTkS",
-    "role": "io",
-    "createdAt": "2026-06-18T12:14:47.752Z"
-  },
-  {
-    "_id": "65e8a156e9c60e3cc4a12302",
-    "username": "SHO-8891",
-    "name": "Senior Inspector M. K. Jadeja",
-    "email": "mk.jadeja@police.gov.in",
-    "badge": "SHO-8891",
-    "password": "$2a$10$0XlIVThiy1cJYDAdEPQyduw.D1zsqsxUuGh0K.aPJAdtlxddqWTkS",
+    "_id": "v5lzybbur9e7zy1kb8xsj",
+    "username": "maya",
+    "name": "maya",
+    "email": "maya@gmail.com",
+    "badge": "IO-1873",
+    "password": "$2a$10$MPvdD.OHDeTB2kRM8L8P4eG7QZeoauL2/4KzNoitSBdpF5hMp6WGe",
     "role": "sho",
-    "createdAt": "2026-06-18T12:14:47.752Z"
-  },
-  {
-    "_id": "65e8a156e9c60e3cc4a12303",
-    "username": "LA-1102",
-    "name": "Advocate P. D. Vyas",
-    "email": "pd.vyas@legal.gov.in",
-    "badge": "LA-1102",
-    "password": "$2a$10$0XlIVThiy1cJYDAdEPQyduw.D1zsqsxUuGh0K.aPJAdtlxddqWTkS",
-    "role": "legal",
-    "createdAt": "2026-06-18T12:14:47.752Z"
+    "createdAt": "2026-06-20T04:26:10.824Z"
   }
 ]
