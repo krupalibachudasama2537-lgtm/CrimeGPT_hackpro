@@ -26,11 +26,15 @@ dotenv.config({ path: path.join(__backendDir, '.env') });
 
 const app = express();
 const server = http.createServer(app);
-
+app.use(cors({
+  origin: 'https://crimegptheck.netlify.app/', // Replace with your actual Netlify URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 // Socket.io integration
 const io = new Server(server, {
   cors: {
-    origin: '*', // Allow all origins for the prototype
+    origin: 'https://crimegptheck.netlify.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE']
   }
 });
@@ -42,7 +46,6 @@ app.use((req, res, next) => {
 });
 
 // Middlewares
-app.use(cors());
 app.use(express.json());
 
 // Rate Limiting to prevent brute-force attacks and abuse
@@ -56,16 +59,6 @@ const apiLimiter = rateLimit({
 
 app.use('/api/', apiLimiter);
 
-// Serve static assets if in production (optional fallback)
-if (process.env.NODE_ENV === 'production') {
-  // Try pointing directly to the root-level frontend/dist folder
-  const buildPath = path.resolve(__dirname, '..', 'frontend', 'dist');
-  app.use(express.static(buildPath));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(buildPath, 'index.html'));
-  });
-}
 
 // Map API Routes
 app.use('/api/auth', authRoutes);
@@ -76,31 +69,6 @@ app.use('/api/ai', aiRoutes);
 app.get('/api/health', (req, res) => {
   res.json({ status: 'healthy', database: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected' });
 });
-
-// Catch-all route to serve React frontend if in production
-if (process.env.NODE_ENV === 'production') {
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(buildPath, 'index.html'));
-  });
-} else {
-  app.get('/', (req, res) => {
-    res.send(`
-      <div style="font-family: sans-serif; text-align: center; padding: 20px; background: #0b0f19; color: #f1f5f9; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box; margin: -8px;">
-        <div style="background: #111827; border: 1px solid #1f2937; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); max-width: 500px; width: 100%;">
-          <h1 style="color: #c89f53; margin: 0 0 10px 0; font-size: 28px; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase;">CrimeGPT Backend</h1>
-          <p style="color: #94a3b8; font-size: 14px; margin: 0 0 25px 0;">API Server successfully connected and listening on port 5000.</p>
-          <div style="border-top: 1px solid #1f2937; padding-top: 25px;">
-            <p style="color: #e2e8f0; font-size: 15px; margin: 0 0 15px 0;">To access the interactive CrimeGPT Portal, go to:</p>
-            <a href="http://localhost:5173" style="color: #0b0f19; background: #c89f53; text-decoration: none; font-weight: 800; font-size: 15px; padding: 12px 24px; border-radius: 8px; display: inline-block; transition: all 0.2s; box-shadow: 0 4px 10px rgba(200, 159, 83, 0.2);">
-              Open Frontend (http://localhost:5173)
-            </a>
-          </div>
-        </div>
-      </div>
-    `);
-  });
-}
-
 // Error Handling Middleware
 app.use((err, req, res, next) => {
   console.error('Unhandled Server Error:', err);
