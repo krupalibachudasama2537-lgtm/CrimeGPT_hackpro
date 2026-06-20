@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "postinstall": "mkdir -p frontend/dist && cp -r ../frontend/dist/* frontend/dist/"
   },
   "dependencies": {
     "@google/generative-ai": "^0.2.1",
