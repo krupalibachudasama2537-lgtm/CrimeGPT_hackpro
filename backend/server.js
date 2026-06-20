@@ -23,7 +23,7 @@ import { initializeOfflineDb } from './services/offlineStorage.js';
 const __filename = fileURLToPath(import.meta.url);
 const __backendDir = path.dirname(__filename);
 dotenv.config({ path: path.join(__backendDir, '.env') });
-
+const express = require('express');
 const app = express();
 app.set('trust proxy', 1);
 const server = http.createServer(app);
