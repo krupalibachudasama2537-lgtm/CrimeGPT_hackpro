@@ -57,13 +57,13 @@ const apiLimiter = rateLimit({
 app.use('/api/', apiLimiter);
 
 // Serve static assets if in production (optional fallback)
-const __dirname = path.resolve();
 if (process.env.NODE_ENV === 'production') {
-  // Use path.resolve('..', 'frontend', 'dist') to look one level up from the backend folder
-  app.use(express.static(path.resolve('..', 'frontend', 'dist')));
-
+  // Points to the folder we just copied the files into
+  const buildPath = path.join(process.cwd(), 'frontend', 'dist');
+  app.use(express.static(buildPath));
+  
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve('..', 'frontend', 'dist', 'index.html'));
+    res.sendFile(path.join(buildPath, 'index.html'));
   });
 }
 
@@ -80,7 +80,7 @@ app.get('/api/health', (req, res) => {
 // Catch-all route to serve React frontend if in production
 if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/dist/index.html'));
+    res.sendFile(path.join(buildPath, 'index.html'));
   });
 } else {
   app.get('/', (req, res) => {
