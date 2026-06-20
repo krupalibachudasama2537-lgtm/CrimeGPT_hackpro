@@ -1,3 +1,5 @@
+import dns from 'node:dns';
+dns.setServers(['8.8.8.8', '1.1.1.1']); // Forces Node to use Google/Cloudflare DNS
 import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
@@ -46,7 +48,7 @@ app.use(express.json());
 // Rate Limiting to prevent brute-force attacks and abuse
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per windowMs
+  max: 500, // Limit each IP to 500 requests per windowMs
   standardHeaders: true,
   legacyHeaders: false,
   message: { message: 'Too many requests from this IP, please try again after 15 minutes' }
@@ -209,18 +211,21 @@ async function seedMongoUsers() {
   }
 }
 
-mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 3000 })
+// Ensure MONGODB_URI is loaded from process.env
+const dbURI = process.env.MONGODB_URI;
+
+console.log("Attempting to connect to:", dbURI); // Add this for debugging in your terminal
+
+mongoose.connect(dbURI, { 
+    serverSelectionTimeoutMS: 5000 // Increased timeout for Atlas cloud connections
+})
   .then(async () => {
     console.log('Successfully connected to MongoDB.');
     await seedMongoUsers();
     await startServer();
   })
   .catch(async (err) => {
-    console.warn('================================================================');
-    console.warn('WARNING: MongoDB is offline or connection timed out!');
-    console.error('Connection error details:', err.message || err);
-    console.warn('CrimeGPT will run in offline local file persistence mode.');
-    console.warn('JSON file storage (cases_db.json / users_db.json) will be used.');
-    console.warn('================================================================');
-    await startServer();
+    console.warn('WARNING: MongoDB connection failed!');
+    console.error('Error:', err.message);
+    await startServer(); // Start in offline mode
   });
