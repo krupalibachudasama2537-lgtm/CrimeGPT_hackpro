@@ -1,7 +1,13 @@
 import { create } from 'zustand';
 import { casesAPI } from '../services/api';
 import * as offlineCache from '../services/offlineCache';
+import api from '../services/api'; // Import your configured instance
 
+// In your fetchCases action:
+fetchCases: async () => {
+  const response = await api.get('/cases'); // This will automatically use the baseURL
+  setStore({ cases: response.data });
+}
 export const useCaseStore = create((setStore, getStore) => ({
   cases: [],
   activeCaseId: null,
