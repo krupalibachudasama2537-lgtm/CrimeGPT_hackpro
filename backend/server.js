@@ -58,8 +58,8 @@ app.use('/api/', apiLimiter);
 
 // Serve static assets if in production (optional fallback)
 if (process.env.NODE_ENV === 'production') {
-  // Points to the folder we just copied the files into
-  const buildPath = path.join(process.cwd(), 'frontend', 'dist');
+  // Try pointing directly to the root-level frontend/dist folder
+  const buildPath = path.resolve(__dirname, '..', 'frontend', 'dist');
   app.use(express.static(buildPath));
   
   app.get('*', (req, res) => {
