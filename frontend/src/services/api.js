@@ -7,9 +7,6 @@ const api = axios.create({
   baseURL: API_BASE_URL,
   withCredentials: true
 });
-
-export default api;
-
 export default api;
 // Get auth token from localStorage
 export const getToken = () => localStorage.getItem('crimegpt_token');
