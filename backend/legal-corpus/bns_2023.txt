@@ -1,0 +1,42 @@
+Section 303 BNS, 2023 - Punishment for Theft
+Definition: Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.
+Penalty: Imprisonment for a term which may extend to three years, or with fine, or with both. For second convictions, the punishment is more severe.
+IPC equivalent: Section 379 IPC.
+
+Section 305 BNS, 2023 - Theft in Dwelling House, Means of Transportation, or Place of Worship
+Definition: Whoever commits theft in any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or for the custody of property, or commits theft in any public transport or place of worship.
+Penalty: Imprisonment for a term which may extend to seven years, and shall also be liable to fine.
+IPC equivalent: Section 380 IPC.
+
+Section 331 BNS, 2023 - Lurking House-Trespass or House-Breaking by Night
+Definition: Whoever commits lurking house-trespass or house-breaking by night, in order to the committing of any offense punishable with imprisonment.
+Penalty: Imprisonment of either description for a term which may extend to fourteen years, and shall also be liable to fine.
+IPC equivalent: Section 457 IPC.
+
+Section 101 BNS, 2023 - Definition of Murder
+Definition: Except in the cases hereinafter excepted, culpable homicide is murder, if the act by which the death is caused is done with the intention of causing death, or causing bodily injury knowing it is likely to cause death, or if it is imminently dangerous that it must in all probability cause death.
+IPC equivalent: Section 300 IPC.
+
+Section 103 BNS, 2023 - Punishment for Murder
+Definition: Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.
+IPC equivalent: Section 302 IPC.
+
+Section 115 BNS, 2023 - Voluntarily Causing Hurt
+Definition: Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said voluntarily to cause hurt.
+Penalty: Imprisonment for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both.
+IPC equivalent: Section 323 IPC.
+
+Section 117 BNS, 2023 - Voluntarily Causing Grievous Hurt
+Definition: Voluntarily causing hurt which results in permanent privation of sight or hearing, permanent disfiguration of face/head, fracture or dislocation of bone or tooth, or hurts that endanger life.
+Penalty: Imprisonment for a term which may extend to seven years, and shall also be liable to fine.
+IPC equivalent: Section 325 IPC.
+
+Section 318 BNS, 2023 - Cheating and Dishonestly Inducing Delivery of Property
+Definition: Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property.
+Penalty: Imprisonment for a term which may extend to seven years, and shall also be liable to fine.
+IPC equivalent: Section 420 IPC.
+
+Section 336 BNS, 2023 - Forgery of Documents or Electronic Records
+Definition: Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury to the public or any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery.
+Penalty: Imprisonment for a term which may extend to two years, or with fine, or with both.
+IPC equivalent: Section 468 IPC / Section 465 IPC.

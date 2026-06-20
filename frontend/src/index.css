@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-police-khaki: #c89f53;
+  --color-police-khaki-light: #f6ebd8;
+  --color-police-khaki-dark: #8c6827;
+  --color-police-navy: #0f1c3f;
+  --color-police-navy-light: #1b2e65;
+  --color-police-navy-dark: #070e24;
+}
+
+/* Custom scrollbars and styling rules for administrative look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.document-page {
+  background-color: white;
+  color: #1e293b;
+  font-family: 'Inter', 'Noto Sans', 'Noto Sans Gujarati', sans-serif;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.btn-police-primary {
+  background-color: var(--color-police-khaki);
+  color: #070e24;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-police-primary:hover {
+  background-color: var(--color-police-khaki-dark);
+  color: white;
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 2px;
+  background-color: #334155;
+}
+
+/* Printing styles to print ONLY the document page sheet */
+@media print {
+  /* Hide all app chrome, sidebars, headers, footers, buttons, and no-print containers */
+  header, 
+  aside, 
+  footer, 
+  nav, 
+  button, 
+  .no-print,
+  .pointer-events-none {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Reset layout structure, removing dark backgrounds and padding for print page */
+  html, 
+  body, 
+  #root, 
+  main, 
+  main > div, 
+  .max-w-6xl {
+    background: white !important;
+    background-color: white !important;
+    color: black !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Reset the parent containers of the printable document wrapper */
+  .bg-slate-800\/80,
+  .bg-slate-900.border.border-slate-800 {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Style the white document paper container to take up full print page */
+  #printable-doc-content {
+    background: white !important;
+    background-color: white !important;
+    color: #1e293b !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* Avoid splitting section headers and table rows across page cuts */
+  h3, h4, tr, table {
+    page-break-inside: avoid;
+  }
+}
+

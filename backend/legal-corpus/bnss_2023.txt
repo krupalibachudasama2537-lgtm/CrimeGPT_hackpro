@@ -1,0 +1,43 @@
+Section 35 BNSS, 2023 - Formal Arrest and Notification
+Definition: Procedures of arrest by police officers. The police officer making the arrest must inform the family or nominated person of the arrested person immediately.
+Timeline: Within 24 hours of arrest, the details of the arrest must be registered at the District Police Headquarters.
+CrPC equivalent: Section 41A/41B CrPC.
+
+Section 36 BNSS, 2023 - Informing Family of Arrested Person
+Definition: Obligation of the police officer to inform a relative, friend, or other person nominated by the arrested person about their arrest and the place where they are being held.
+Timeline: Immediately upon arrest. Must be recorded in the police station diary.
+CrPC equivalent: Section 50A CrPC.
+
+Section 53 BNSS, 2023 - Mandatory Medical Examination of Arrested Person
+Definition: Every arrested person must be subjected to a medical examination by a registered medical practitioner (government doctor or private doctor if government doctor is unavailable) immediately after arrest.
+Timeline: Within 24 hours of arrest. The medical officer must prepare a detailed injury report and fitness certificate.
+CrPC equivalent: Section 54 CrPC.
+
+Section 105 BNSS, 2023 - Mandatory Videography of Search and Seizure
+Definition: Search and seizure procedures at the crime scene. The police must record the search and seizure operations (including the preparation of the seizure list/zabti patrak) using electronic/mobile video devices.
+Timeline: The recording must be completed during the search operation. The videographed material must be forwarded to the Magistrate without delay to prevent tampering.
+CrPC equivalent: Section 100/102 CrPC.
+
+Section 173 BNSS, 2023 - Information in Cognizable Cases and Registration of FIR
+Definition: Information relating to the commission of a cognizable offense. Allows filing of FIR via electronic communication (e-FIR), which must be signed by the complainant within three days.
+Timeline: Preliminary inquiry for offenses punishable between 3 to 7 years must be completed within 14 days before registering an FIR.
+CrPC equivalent: Section 154 CrPC.
+
+Section 180 BNSS, 2023 - Recording of Witness Statements
+Definition: Recording of witness statements by investigating officers. Can be recorded in writing or by audio-video electronic means.
+Timeline: Statements must be recorded without delay during the course of the investigation.
+CrPC equivalent: Section 161 CrPC.
+
+Section 185 BNSS, 2023 - Search by Investigating Officer
+Definition: Investigating officer's power to conduct searches of locations within their jurisdiction where they have reasonable grounds to believe evidence is located.
+CrPC equivalent: Section 165 CrPC.
+
+Section 187 BNSS, 2023 - Magistrate's Custody Remand
+Definition: Remand of accused when investigation cannot be completed within 24 hours of arrest. The Magistrate can authorize detention in police custody or judicial custody.
+Timeline: Presentation before Magistrate must be within 24 hours of arrest. Total police custody remand can be requested up to 15 days (extended to 60 or 90 days for chargesheet filing).
+CrPC equivalent: Section 167 CrPC.
+
+Section 193 BNSS, 2023 - Filing of Chargesheet
+Definition: Form of report to be submitted by the investigating officer to the Magistrate upon completion of the investigation.
+Timeline: The chargesheet must be filed within 60 days (for offenses punishable with imprisonment up to 10 years) or 90 days (for offenses punishable with death, life imprisonment, or imprisonment for more than 10 years) from the date of arrest/detention.
+CrPC equivalent: Section 173 CrPC.

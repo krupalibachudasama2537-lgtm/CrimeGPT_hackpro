@@ -1,0 +1,27 @@
+State of Maharashtra v. Vishwanath (1979) 4 SCC 23
+Precedent: The Supreme Court held that temporary removal of property out of the possession of the owner without their consent with a dishonest intention constitutes the offense of theft. The intent to permanently dispossess is not necessary to prove theft; even temporary dispossession is sufficient.
+Keywords: theft, steal, gold, ornaments, temporary removal.
+
+K. N. Mehra v. State of Rajasthan, AIR 1957 SC 369
+Precedent: The Supreme Court clarified that the 'moving' of a movable property out of the possession of any person with a dishonest intention is the essence of theft. Taking an aircraft for an unauthorized flight was held to constitute theft even if there was no intention to keep the aircraft permanently.
+Keywords: theft, dishonest intention, moving property, consent.
+
+K. M. Nanavati v. State of Maharashtra, AIR 1962 SC 605
+Precedent: The Supreme Court laid down the guidelines and tests for determining what constitutes "grave and sudden provocation" and when a murder charge can be reduced to culpable homicide not amounting to murder. It ruled that the provocation must be such that the person loses control of their mind and acts under a sudden impulse, and there must not be sufficient time for cooling down.
+Keywords: murder, homicide, grave sudden provocation, cooling down.
+
+State of U.P. v. Deoman Upadhyaya, AIR 1960 SC 1125
+Precedent: The Supreme Court upheld the constitutional validity of discovery statements made while in the custody of a police officer. It ruled that facts discovered in consequence of information received from an accused in police custody are admissible.
+Keywords: discovery statement, custody, police officer, evidence.
+
+Lalita Kumari v. Govt of U.P. (2014) 2 SCC 1
+Precedent: The Supreme Court ruled that registration of an FIR is mandatory under Section 154 of the CrPC (now Section 173 of the BNSS) if the information disclosed to the police officer discloses the commission of a cognizable offense. In such cases, no preliminary inquiry is permissible.
+Keywords: FIR registration, mandatory, cognizable offense, preliminary inquiry.
+
+State of Haryana v. Bhajan Lal, 1992 Supp (1) SCC 335
+Precedent: The Supreme Court laid down exhaustive guidelines and categories where the High Court can exercise its power under Section 482 of the CrPC (quashing of FIR/complaint) to prevent abuse of the process of any court or otherwise to secure the ends of justice. Relevant for cases of fraud or cheating which are civil in nature.
+Keywords: quash FIR, abuse of process, cheating, civil dispute, fraud.
+
+State of Karnataka v. Shivalingaiah (1988) SCC (Cri) 279
+Precedent: The Supreme Court clearly differentiated between voluntarily causing hurt/grievous hurt and attempt to commit murder, emphasizing that the nature of the weapon, the force used, and the site of injury on the body must be analyzed to determine the exact intent.
+Keywords: assault, bodily hurt, grievous hurt, weapon, murder attempt.

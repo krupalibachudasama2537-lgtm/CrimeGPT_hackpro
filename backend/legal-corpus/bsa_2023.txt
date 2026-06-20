@@ -1,0 +1,22 @@
+Section 26 BSA, 2023 - Admissibility of Dying Declarations
+Definition: Statements, written or verbal, of relevant facts made by a person who is dead, or who cannot be found, or who has become incapable of giving evidence. Statements made by a person as to the cause of his death or as to any of the circumstances of the transaction which resulted in his death.
+Relevance: Admissible in cases in which the cause of that person's death comes into question.
+Evidence Act equivalent: Section 32(1) Indian Evidence Act (IEA).
+
+Section 45 BSA, 2023 - Opinion of Experts
+Definition: When the Court has to form an opinion upon a point of foreign law, science, or art, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science, art, or identify of handwriting or finger impressions are relevant facts.
+Examples: Medical opinions by doctors on injury status, forensic autopsy reports, ballistics, handwriting comparisons.
+Evidence Act equivalent: Section 45 IEA.
+
+Section 63 BSA, 2023 - Admissibility of Electronic Records / Secondary Evidence
+Definition: Rules governing secondary evidence and electronic records. Secondary evidence includes printouts, digital scans, photos, videos, and data stored in computer memory, hard drives, or mobile phones.
+Relevance: Standardizes the certificate requirements for digital evidence. A digital scan of an FIR, handwritten note, or videographed seizure operation is admissible under this section.
+Evidence Act equivalent: Section 63 / 65B IEA.
+
+Section 103 BSA, 2023 - Burden of Proof as to Particular Fact
+Definition: The burden of proof as to any particular fact lies on that person who wishes the Court to believe in its existence, unless it is provided by any law that the proof of that fact shall lie on any particular person.
+Evidence Act equivalent: Section 103 IEA.
+
+Section 114 BSA, 2023 (Illustration a) - Presumption of Possession of Stolen Goods
+Definition: The Court may presume that a man who is in possession of stolen goods soon after the theft is either the thief or has received the goods knowing them to be stolen, unless he can account for his possession.
+Evidence Act equivalent: Section 114 Illus (a) IEA.
